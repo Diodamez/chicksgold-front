@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "@/styles/index.module.css";
-import ItemCard from "@/components/item/item";
 import MOCK_DATA from "../MOCK_DATA.json";
 import Header from "@/components/header/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Image from "next/image";
-import { Paginator } from "@/components/paginator/paginator";
 import { Footer } from "@/components/footer/footer";
 import List from "@/components/list/list";
 
@@ -94,32 +92,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className={`${styles.list_container}`}>
-          <div className={`${styles.items_filter}`}>
-            <div className={`${styles.items_shown}`}>Showing 20 - from 125</div>
-            <div className={`${styles.sort_select}`}>
-              <button className={`${styles.dropdown}`}>
-                <div>
-                  <Image
-                    src="https://chicksgold.com/icons/green-icons/filter.svg"
-                    alt="icon"
-                    width={24}
-                    height={24}
-                  />
-                  <span className={`${styles.top_label}`}>Sort By</span>
-                  <span className={`${styles.value}`}>Featured</span>
-                  <FontAwesomeIcon icon={faCaretDown} width={20} height={16} />
-                </div>
-              </button>
-            </div>
-          </div>
-          <div className={styles.list}>
-            {items.map((value) => (
-              <ItemCard item={value} key={value.id}></ItemCard>
-            ))}
-          </div>
-          <Paginator />
-        </div> */}
         <List items={items} />
       </main>
       <Footer />

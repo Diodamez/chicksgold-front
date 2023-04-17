@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: "chicks-games.s3.amazonaws.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "chicks-products.s3.amazonaws.com",
+        pathname: "/**",
+      },
     ],
   },
 };

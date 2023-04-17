@@ -2,6 +2,8 @@
   background-color: #323648;
   border-radius: 10px;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 .top {
   margin-bottom: 20px;
@@ -67,6 +69,7 @@
 .action_area {
   display: flex;
   gap: 8px;
+  margin-top: auto;
 }
 .btn {
   padding: 8px;
